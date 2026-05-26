@@ -146,7 +146,7 @@ section[data-testid="stSidebar"] > div {
 
 /* ---- HERO SECTION ---- */
 .hero-wrapper {
-    padding: 64px 60px 40px;
+    padding: 64px 72px 40px;
     border-bottom: 1px solid rgba(212,175,55,0.08);
     position: relative;
     overflow: hidden;
@@ -224,7 +224,7 @@ section[data-testid="stSidebar"] > div {
 .stats-row {
     display: flex;
     gap: 16px;
-    padding: 24px 60px;
+    padding: 24px 72px;
     border-bottom: 1px solid rgba(212,175,55,0.06);
 }
 
@@ -261,7 +261,7 @@ section[data-testid="stSidebar"] > div {
 
 /* ---- ANALYSIS SECTION ---- */
 .section-header {
-    padding: 40px 60px 0;
+    padding: 40px 72px 0;
 }
 
 .section-title {
@@ -568,7 +568,7 @@ hr {
 
 /* ---- CONTENT PADDING ---- */
 .main-pad {
-    padding: 0 60px 60px;
+    padding: 0 72px 60px;
 }
 
 /* ---- SCROLLBAR ---- */
@@ -962,7 +962,7 @@ if st.session_state.page == "Dashboard":
     """, unsafe_allow_html=True)
 
     st.markdown("""
-        <div style="padding: 48px 60px;">
+        <div style="padding: 48px 72px;">
             <div style="font-family:'Cormorant Garamond',serif; font-size:13px; letter-spacing:3px;
                         text-transform:uppercase; color:rgba(212,175,55,0.4); margin-bottom:28px;">
                 IPL Teams
@@ -1003,7 +1003,7 @@ if st.session_state.page == "Dashboard":
             """, unsafe_allow_html=True)
 
     st.markdown("""
-        <div style="padding:0 60px 32px; text-align:center;">
+        <div style="padding:0 72px 32px; text-align:center;">
             <div style="display:inline-block; background:rgba(212,175,55,0.06); border:1px solid rgba(212,175,55,0.15);
                         border-radius:14px; padding:20px 36px;">
                 <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;
@@ -1041,7 +1041,7 @@ if st.session_state.page == "Analysis":
         </div>
     """, unsafe_allow_html=True)
 
-    col1, col2 = st.columns([1, 1], gap="large")
+    col1, col2 = st.columns([1.2, 1.2], gap="medium")
 
     with col1:
         st.markdown('<div class="input-card">', unsafe_allow_html=True)
@@ -1088,7 +1088,7 @@ if st.session_state.page == "Analysis":
         </div>
     """, unsafe_allow_html=True)
 
-    vs_col1, vs_col2, vs_col3 = st.columns([2, 1, 2])
+    vs_col1, vs_col2, vs_col3 = st.columns([2.4, 0.8, 2.4], gap="medium")
 
     with vs_col1:
         st.markdown(f"""
@@ -1193,7 +1193,7 @@ if st.session_state.page == "Analysis":
             </div>
         """, unsafe_allow_html=True)
 
-        res_col1, res_col2 = st.columns(2, gap="large")
+        res_col1, res_col2 = st.columns([1.1, 1.1], gap="medium")
 
         with res_col1:
             bat_pct = round(win * 100)
