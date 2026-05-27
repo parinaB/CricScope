@@ -1,4 +1,26 @@
 import streamlit as st
+st.markdown("""
+<style>
+
+/* Sidebar full height */
+section[data-testid="stSidebar"] {
+    height: 100vh;
+    background-color: #0f172a;
+}
+
+/* Main dashboard background */
+.main {
+    background-color: #020617;
+    color: white;
+}
+
+/* Remove default padding */
+.block-container {
+    padding-top: 2rem;
+}
+
+</style>
+""", unsafe_allow_html=True)
 import pandas as pd
 import numpy as np
 import time
@@ -882,6 +904,7 @@ with st.sidebar:
             <span class="sidebar-tagline">Match Intelligence Platform</span>
         </div>
     """, unsafe_allow_html=True)
+    
 
     st.markdown('<div class="sidebar-section-label">Navigation</div>', unsafe_allow_html=True)
 
